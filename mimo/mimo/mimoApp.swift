@@ -11,7 +11,7 @@ import SwiftUI
 struct mimoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            home()
         }
     }
 }
