@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9D00C7BF2C61142000152C2F /* mimoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C7BE2C61142000152C2F /* mimoApp.swift */; };
-		9D00C7C12C61142000152C2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C7C02C61142000152C2F /* ContentView.swift */; };
 		9D00C7C32C61142200152C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D00C7C22C61142200152C2F /* Assets.xcassets */; };
 		9D00C7C62C61142200152C2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D00C7C52C61142200152C2F /* Preview Assets.xcassets */; };
 		9D00C7D02C61142200152C2F /* mimoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C7CF2C61142200152C2F /* mimoTests.swift */; };
 		9D00C7DA2C61142200152C2F /* mimoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C7D92C61142200152C2F /* mimoUITests.swift */; };
 		9D00C7DC2C61142200152C2F /* mimoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C7DB2C61142200152C2F /* mimoUITestsLaunchTests.swift */; };
+		9D00C7EA2C61147700152C2F /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C7E92C61147700152C2F /* home.swift */; };
+		9D00C7EE2C61159B00152C2F /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C7ED2C61159B00152C2F /* tabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		9D00C7BB2C61142000152C2F /* mimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D00C7BE2C61142000152C2F /* mimoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mimoApp.swift; sourceTree = "<group>"; };
-		9D00C7C02C61142000152C2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D00C7C22C61142200152C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D00C7C52C61142200152C2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D00C7CB2C61142200152C2F /* mimoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mimoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		9D00C7D52C61142200152C2F /* mimoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mimoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D00C7D92C61142200152C2F /* mimoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mimoUITests.swift; sourceTree = "<group>"; };
 		9D00C7DB2C61142200152C2F /* mimoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mimoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D00C7E92C61147700152C2F /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		9D00C7ED2C61159B00152C2F /* tabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		9D00C7BD2C61142000152C2F /* mimo */ = {
 			isa = PBXGroup;
 			children = (
+				9D00C7EC2C61159000152C2F /* model */,
+				9D00C7E82C61146B00152C2F /* View */,
 				9D00C7BE2C61142000152C2F /* mimoApp.swift */,
-				9D00C7C02C61142000152C2F /* ContentView.swift */,
 				9D00C7C22C61142200152C2F /* Assets.xcassets */,
 				9D00C7C42C61142200152C2F /* Preview Content */,
 			);
@@ -125,6 +128,22 @@
 				9D00C7DB2C61142200152C2F /* mimoUITestsLaunchTests.swift */,
 			);
 			path = mimoUITests;
+			sourceTree = "<group>";
+		};
+		9D00C7E82C61146B00152C2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D00C7E92C61147700152C2F /* home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D00C7EC2C61159000152C2F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9D00C7ED2C61159B00152C2F /* tabView.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D00C7C12C61142000152C2F /* ContentView.swift in Sources */,
+				9D00C7EE2C61159B00152C2F /* tabView.swift in Sources */,
+				9D00C7EA2C61147700152C2F /* home.swift in Sources */,
 				9D00C7BF2C61142000152C2F /* mimoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
